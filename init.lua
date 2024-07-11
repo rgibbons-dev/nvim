@@ -56,4 +56,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     end,
 })
 
+vim.cmd("colorscheme dogrun")
+
 require("lazy").setup("plugins")
