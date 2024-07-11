@@ -36,7 +36,7 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
-vim.opt.termguicolors = true
+vim.opt.termguicolors = false
 
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
@@ -56,6 +56,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     end,
 })
 
-vim.cmd("colorscheme dogrun")
+--vim.cmd("colorscheme dogrun")
 
 require("lazy").setup("plugins")

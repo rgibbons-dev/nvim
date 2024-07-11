@@ -1,3 +1,7 @@
 return {
-    'wadackel/vim-dogrun'
+    "wadackel/vim-dogrun",
+    priority = 1000,
+    init = function()
+        vim.cmd.colorscheme("dogrun")
+    end,
 }
