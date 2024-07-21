@@ -64,6 +64,7 @@ return {
         local servers = {
             clangd = {},
             lua_ls = {},
+            zls = {},
         }
 
         require("mason").setup()
