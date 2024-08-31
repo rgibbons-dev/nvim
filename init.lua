@@ -36,7 +36,7 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
-vim.opt.termguicolors = false
+vim.opt.termguicolors = true
 
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
