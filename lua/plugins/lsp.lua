@@ -63,6 +63,7 @@ return {
 
         local servers = {
             lua_ls = {},
+            gopls = {},
         }
 
         require("mason").setup()
