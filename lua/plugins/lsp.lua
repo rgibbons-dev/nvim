@@ -63,6 +63,7 @@ return {
 
         local servers = {
             lua_ls = {},
+            rust_analyzer = {},
         }
 
         require("mason").setup()
