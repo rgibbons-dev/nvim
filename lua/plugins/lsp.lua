@@ -63,8 +63,6 @@ return {
 
         local servers = {
             lua_ls = {},
-            rust_analyzer = {},
-            clangd = {},
         }
 
         require("mason").setup()
@@ -75,6 +73,9 @@ return {
         require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
         require("mason-lspconfig").setup({
+            -- we already ensure that lsp are installed above, this is just to satisfy the plugin
+            ensure_installed = servers,
+            automatic_installation = true,
             handlers = {
                 function(server_name)
                     local server = servers[server_name] or {}
